@@ -21,6 +21,7 @@
 - ... ?
 
 ## Backend:
+- implement and abstract the https://github.com/webtorrent/webtorrent/blob/HEAD/docs/api.md
 - support adapter constructs for torrent trackers that will allow incremental integration 
   * can query for content over multiple torrent indices or over specific one
   * some kind of meta info, which is kinda generic (title, description, images, rating)
