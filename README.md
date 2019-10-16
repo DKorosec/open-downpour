@@ -1,7 +1,8 @@
 # open-downpour
 > work in progress!!!
+> TODO: make a video of a simple use-case when prototype is ready
 
-Idea:
+### Idea:
 1. Connect raspberry to the internet and external HDD which is plugged into tv or on internal shared network.
 2. Use mobile / web app to download movies over torrent trackers or search the downloaded ones
 3. Watch it on TV
