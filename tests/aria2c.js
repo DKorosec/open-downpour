@@ -7,7 +7,9 @@ const inputsAndExpectedOutputs = [
         '[#b21a4e 0B/2463842304B(0%) CN:0 SD:0 DL:0B] [FileAlloc:#b21a4e 0B/2463842304B(0%)]',
         {
             statusType: "initializing",
-            bytesProcessTotal: 2463842304,
+            sizeBytes: 2463842304,
+            sizeBytesInitialization: 2463842304,
+            bytesProcessed: 0,
             completionPercentage: 0
         }
     ),
@@ -15,7 +17,9 @@ const inputsAndExpectedOutputs = [
         '[#b21a4e 0B/2463842304B(0%) CN:0 SD:0 DL:0B] [FileAlloc:#b21a4e 93061120B/2463842304B(3%)]',
         {
             statusType: "initializing",
-            bytesProcessTotal: 2463842304,
+            sizeBytes: 2463842304,
+            sizeBytesInitialization: 2463842304,
+            bytesProcessed: 93061120,
             completionPercentage: 0.037
         }
     ),
@@ -23,7 +27,9 @@ const inputsAndExpectedOutputs = [
         '[#b21a4e 0B/2463842304B(0%) CN:0 SD:0 DL:0B] [Checksum:#f4eb9a 0B/2463842304B(0%)]',
         {
             statusType: "initializing",
-            bytesProcessTotal: 2463842304,
+            sizeBytes: 2463842304,
+            sizeBytesInitialization: 2463842304,
+            bytesProcessed: 0,
             completionPercentage: 0
         }
     ),
@@ -31,7 +37,9 @@ const inputsAndExpectedOutputs = [
         '[#c66903 0B/2463842304B(0%) CN:0 SD:0 DL:0B] [Checksum:#f4eb9a 128974848B/2463842304B(5%)]',
         {
             statusType: "initializing",
-            bytesProcessTotal: 2463842304,
+            sizeBytes: 2463842304,
+            sizeBytesInitialization: 2463842304,
+            bytesProcessed: 128974848,
             completionPercentage: 0.052
         }
     ),
