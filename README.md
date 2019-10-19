@@ -1,5 +1,7 @@
-# open-downpour
-> work in progress!!!
+# open-downpour (work in progress!)
+> development is done in "develop" branch
+
+> working releases will be merged into master
 
 > TODO: make a video of a simple use-case when prototype is ready
 
