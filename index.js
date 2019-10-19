@@ -1,14 +1,29 @@
 const fs = require('fs-extra');
 const { Torrent } = require('./lib/torrent');
 
+const torrentId = '?'
+const dirPath = './test_files/sometorrent';
+//fs.removeSync(dirPath);
 
-fs.removeSync('./ubuntu-download2/');
-
+// todo every torrent must have its directory ready
+/*
+torrents:
+    TORRENT_A:
+        - some_torrent_hash.torrent
+        - torrent files...
+*/
 const torrent = new Torrent({
-    torrentPath: './test_files/partis.torrent',
-    dirPath: './test_files/'
+    torrentId,
+    dirPath
 });
+async function main() {
+    await torrent.startDownload();
+}
+main();
 
-torrent.download();
-
-// TODO: MAGNETIC LINKS ARIA2c!! or magnetic link -> torrent (TPB)
+/*
+Think about how the api would work...
+every torrent instance should have a STATE, and communicate with database. Mongodb?
+so every torrent "instance" would be loaded in memory from the database, and continue from his state (last written to db) - seeding -> continue seeding, downloading -> continue downloading
+...
+*/
