@@ -18,6 +18,8 @@
     },
     "homepage": "https://github.com/DKorosec/open-downpour#readme",
     "dependencies": {
+        "aria2": "4.1.0",
+        "express": "4.17.1",
         "fs-extra": "8.1.0",
         "get-aria2": "1.0.8"
     }
